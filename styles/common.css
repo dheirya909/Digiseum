@@ -64,3 +64,17 @@ body {
     border-left: 4px solid #76c7a2;
     color: #fff;
 }
+
+.main-content {
+    margin-left: 230px;
+    transition: margin-left 0.3s;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.open-btn {
+    font-size: 2em;
+    cursor: pointer;
+    display: none;
+    color: #00703a;
+}

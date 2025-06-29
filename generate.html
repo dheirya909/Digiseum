@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digiseum - AI Souvenir Generator</title>
+    <!-- Your existing common styles -->
+    <link rel="stylesheet" href="/styles/common.css">
+    <!-- New styles just for this page -->
+    <link rel="stylesheet" href="/styles/generate.css">
+</head>
+<body>
+    <!-- SIDEBAR (Copied from index.html for consistency) -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <h2>Digiseum</h2>
+            </div>
+            <span class="close-btn" id="closeBtn">×</span>
+        </div>
+        <ul>
+            <li><a href="/index.html"> Home</a></li>
+            <li><a href="/navigate.html"> Navigate</a></li>
+            <!-- Note the "active" class is now on this item -->
+            <li><a href="/generate.html" class="active"> Generate! (new)</a></li>
+            <li><a href="#"> About</a></li>
+        </ul>
+    </nav>
+    <div class="overlay" id="sidebarOverlay"></div>
+
+    <!-- MAIN CONTENT AREA -->
+    <div class="main-content">
+      
+      <section class="generator-container">
+        <div class="generator-intro">
+            <h2>Create Your Own Digital Souvenir</h2>
+            <p>Select a piece of art and describe a new style. Our AI will re-imagine it for you as a descriptive souvenir card.</p>
+        </div>
+
+        <form id="ai-form" class="generator-form">
+            <!-- Step 1: Image Upload -->
+            <div class="form-group">
+                <label for="image-input">1. Upload an Artwork</label>
+                <input type="file" id="image-input" class="file-input" accept="image/*" required>
+            </div>
+                      
+            <!-- Step 2: Style Prompt -->
+            <div class="form-group">
+                <label for="style-prompt">2. Describe a New Style</label>
+                <textarea id="style-prompt" rows="3" placeholder="e.g., in a vibrant anime style, as a moody cyberpunk scene, in the style of Picasso..." required></textarea>
+            </div>
+          
+            <!-- Step 3: Generate Button -->
+            <button type="submit" id="generate-btn" class="generate-btn">Generate Souvenir</button>
+        </form>
+        
+        <div id="loading-spinner" class="loading-spinner" style="display: none;"></div>
+        <div id="result-container" class="image-result-container" style="display: none;">
+            <img id="generated-image" src="" alt="Generated AI Souvenir" />
+            <a id="download-btn" class="generate-btn">Download Souvenir</a>
+        </div>
+      </section>
+    </div>
+
+    <!-- JAVASCRIPT LIBRARIES & YOUR SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/scripts/home.js"></script> <!-- Re-use your script for sidebar functionality -->
+    <script type="module" src="/scripts/generate.js"></script>
+</body>
+</html>

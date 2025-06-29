@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digiseum - Digital museum</title>
+    <title>Digiseum - The Digital Museum Experience</title>
     <link rel="stylesheet" href="/styles/home.css">
     <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/styles/hero-features.css">
+    <style>
+        .features img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 14px;
+            background: #f7fcfa;
+            box-shadow: 0 2px 8px #00703a11;
+        }
+        .feature h3 {
+            margin-top: 7px;
+        }
+        .feature a {
+            color: #159d6a;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+        .museum-divider {
+            width: 90vw;
+            max-width: 900px;
+            height: 1.5px;
+            background: linear-gradient(to right, #25b36b 10%, #eaf7ef 50%, #25b36b 90%);
+            margin: 50px auto 40px auto;
+            border: none;
+        }
+        .institution-credit {
+            color: #229b5c;
+            font-size: 0.97em;
+            text-align: right;
+            margin: 28px 22px 12px 0;
+        }
+    </style>
 </head>
 <body>
     <nav class="sidebar" id="sidebar">
@@ -17,40 +51,71 @@
         </div>
         <ul>
             <li><a href="/index.html" class="active"> Home</a></li>
-            <li><a href="/navigate.html"> navigate</a></li>
-            <li><a href="#"> Generate! (new)</a></li>
-            <li><a href="#"> About</a></li>
+            <li><a href="/navigate.html"> Navigate</a></li>
+            <li><a href="/generate.html"> Generate! (new)</a></li>
+            <li><a href="/about.html"> About</a></li>
         </ul>
     </nav>
     <div class="overlay" id="sidebarOverlay"></div>
     <div class="main-content">
-        <header>
-            <span class="open-btn" id="openBtn">&#9776;</span>
-            <h1>Welcome to DIGISEUM</h1>
-        </header>
         <section class="hero">
             <div class="hero-content">
-                <h2>Discover Innovation, Art, and History Like Never Before</h2>
+                <h2>Experience World Heritage. Explore, Learn, and Create at Digiseum.</h2>
                 <p>
-                    Visit stunning exhibits throughout the world. Explore art, history, and more — and create your own custom souvenir image in your favorite style.
+                    Digiseum is your online gateway to the treasures of the world's greatest museums. Walk through legendary galleries, study masterpieces, and interact with curated collections from across history and continents—without leaving your home.
                 </p>
-                <a href="/navigate.html" class="hero-btn">Get Started</a>
+                <div class="cta-btns" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:28px;">
+                    <a href="/navigate.html" class="hero-btn">Browse Collections</a>
+                    <a href="/generate.html" class="hero-btn" style="background:#159d6a;">Create AI Souvenir</a>
+                    <a href="/about.html" class="hero-btn" style="background:#e2f6ec; color:#00703a;">About Digiseum</a>
+                </div>
             </div>
         </section>
+        <hr class="museum-divider" aria-hidden="true"/>
         <section class="features">
             <div class="feature">
-                <h3>Explore</h3>
-                <p>Visit galleries and rare digital exhibits.</p>
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Museum Gallery">
+                <h3>Curated Museum Galleries</h3>
+                <p>
+                    Journey through digital galleries modeled on the world's top institutions. Each exhibit showcases authentic artworks, artifacts, and architecture with context, provenance, and high-resolution visuals.
+                </p>
             </div>
             <div class="feature">
-                <h3>Create</h3>
-                <p>Create your own souvenir image.</p>
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="AI art creation">
+                <h3>AI Souvenir Studio</h3>
+                <p>
+                    Turn your inspiration into a unique digital souvenir. Describe your vision—whether it's a Van Gogh-style portrait or a modern reinterpretation of a classic—and our AI will generate a downloadable artwork just for you.
+                </p>
+                <a href="/generate.html">Try It Now</a>
             </div>
             <div class="feature">
-                <h3>Innovate</h3>
-                <p>Experience a modern, tech-driven museum.</p>
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Museum Guide">
+                <h3>Guided Exploration</h3>
+                <p>
+                    Use smart navigation to explore by artist, movement, period, or theme. Each section is designed to educate, inspire, and help you make meaningful connections with art and culture.
+                </p>
             </div>
         </section>
+        <section class="features" style="background:#f7fcfa;gap:32px;">
+            <div class="feature">
+                <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=400&q=80" alt="Learning">
+                <h3>Education & Research</h3>
+                <p>
+                    Digiseum is a resource for students, teachers, and researchers. Use our collections for virtual field trips, assignments, or in-depth study—complete with references and verified sources.
+                </p>
+            </div>
+            <div class="feature">
+                <img src="https://images.unsplash.com/photo-1468421870903-4df1664ac249?auto=format&fit=crop&w=400&q=80" alt="Community">
+                <h3>Open, Accessible, Collaborative</h3>
+                <p>
+                    Digiseum is open-source and free for all. We collaborate with museum professionals and welcome contributions from the global community. <a href="https://github.com/dheirya909/digiseum" target="_blank">Get involved</a>.
+                </p>
+            </div>
+        </section>
+        <div class="institution-credit">
+            Images: Louvre, Uffizi, Prado, Hermitage, Rijksmuseum, Unsplash.<br>
+            &copy; 2025 Digiseum. A professional digital museum platform by Dheirya Kharbanda.
+        </div>
     </div>
     <script src="/scripts/home.js"></script>
 </body>

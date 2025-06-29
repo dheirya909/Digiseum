@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digiseum - About Us</title>
+    <link rel="stylesheet" href="/styles/common.css">
+    <link rel="stylesheet" href="/styles/museum.css">
+    <style>
+      body {
+        background: #eaf7ef;
+        color: #184c26;
+      }
+      .about-hero {
+        background: linear-gradient(120deg, #25b36b 70%, #eaf7ef 100%);
+        color: #fff;
+        border-radius: 20px;
+        padding: 44px 36px 38px 36px;
+        box-shadow: 0 4px 24px rgba(50,60,100,0.11);
+        margin-bottom: 32px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .about-hero h1 {
+        font-size: 2.6rem;
+        margin: 0 0 16px 0;
+        letter-spacing: 1px;
+        color: #fff;
+        text-shadow: 0 2px 8px #1c4e2e22;
+      }
+      .about-hero p {
+        font-size: 1.22rem;
+        margin: 0 auto 18px auto;
+        max-width: 560px;
+        color: #f7fff8;
+      }
+      .about-section {
+        background: #fff;
+        color: #184c26;
+        max-width: 820px;
+        margin: 0 auto 36px auto;
+        border-radius: 18px;
+        padding: 32px 30px 30px 30px;
+        box-shadow: 0 1px 8px rgba(60,100,80,0.08);
+      }
+      .about-section h2 {
+        color: #25b36b;
+        font-size: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 12px;
+      }
+      .about-section ul {
+        padding-left: 1.4em;
+        margin-top: 10px;
+      }
+      .team-section {
+        text-align: center;
+        margin-bottom: 8px;
+      }
+      .team-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+        margin-top: 18px;
+      }
+      .team-card {
+        background: #eaf7ef;
+        border-radius: 12px;
+        box-shadow: 0 1px 12px rgba(20,80,50,0.10);
+        padding: 18px 20px 14px 20px;
+        width: 200px;
+        color: #184c26;
+        text-align: center;
+        border: 2px solid #25b36b22;
+        transition: transform 0.14s;
+      }
+      .team-card:hover {
+        transform: translateY(-4px) scale(1.04);
+        box-shadow: 0 3px 24px #25b36b33;
+      }
+      .team-card img {
+        border-radius: 50%;
+        border: 2.5px solid #25b36b;
+        width: 66px;
+        height: 66px;
+        object-fit: cover;
+        margin-bottom: 12px;
+      }
+      .team-card .name {
+        font-weight: 600;
+        color: #25b36b;
+        font-size: 1.09em;
+        margin-bottom: 4px;
+      }
+      .team-card .role {
+        font-size: 0.98em;
+        color: #184c26;
+        margin-bottom: 7px;
+      }
+      .team-card .links a {
+        color: #184c26;
+        text-decoration: none;
+        font-size: 1.05em;
+        margin: 0 4px;
+        font-weight: 700;
+      }
+      .team-card .links a:hover {
+        color: #25b36b;
+        text-decoration: underline;
+      }
+      .about-credit {
+        color: #229b5c;
+        font-size: 0.96em;
+        margin-top: 38px;
+        text-align: right;
+      }
+      a {
+        color: #25b36b;
+      }
+      a:hover {
+        color: #184c26;
+      }
+      @media (max-width: 780px) {
+        .about-section, .about-hero {padding: 22px 7vw;}
+        .about-gallery {gap: 10px;}
+        .team-card {width: 96vw; max-width: 320px;}
+      }
+      @media (max-width: 540px) {
+        .about-hero h1 {font-size: 2rem;}
+        .about-section h2 {font-size: 1.15rem;}
+      }
+    </style>
+</head>
+<body>
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <h2>Digiseum</h2>
+            </div>
+            <span class="close-btn" id="closeBtn">&times;</span>
+        </div>
+        <ul>
+            <li><a href="/index.html"> Home</a></li>
+            <li><a href="/navigate.html"> Navigate</a></li>
+            <li><a href="/generate.html"> Generate! (new)</a></li>
+            <li><a href="/about.html" class="active"> About</a></li>
+        </ul>
+    </nav>
+    <div class="main-content">
+      <section class="about-hero">
+        <h1>Welcome to Digiseum</h1>
+        <p>
+          <b>Where the world's greatest museums meet the digital age.</b><br>
+          Step inside a virtual gallery that brings you face to face with timeless masterpieces, fresh inspiration, and a new way to create and remember your journey.
+        </p>
+      </section>
+      <section class="about-section">
+        <h2>Our Mission</h2>
+        <p>
+          At <b>Digiseum</b>, our mission is to break down barriers between art, history, and people—anywhere, anytime. We want to make the world’s cultural treasures not just accessible, but interactive, inspiring, and unforgettable for all.
+        </p>
+      </section>
+      <section class="about-section">
+        <h2>What Makes Digiseum Special?</h2>
+        <ul>
+          <li><b>Curated Virtual Halls:</b> Handpicked highlights from the Louvre, Met, Uffizi, Prado, Hermitage, Rijksmuseum, and more.</li>
+          <li><b>Stunning Art Experiences:</b> Enjoy high-res images, stories, and context for every masterpiece.</li>
+          <li><b>AI Souvenir Generator:</b> Dream up your own art souvenir using our AI-powered creative tool.</li>
+          <li><b>Accessible for All:</b> Whether you’re a student, art lover, or just curious, Digiseum is made for you.</li>
+        </ul>
+      </section>
+      <section class="about-section team-section">
+        <h2>Meet the Team</h2>
+        <div class="team-cards">
+          <div class="team-card">
+            <img src="https://avatars.githubusercontent.com/u/32423382?v=4" alt="Dheirya Kharbanda" />
+            <div class="name">Dheirya Kharbanda</div>
+            <div class="role">Lead Dev</div>
+            <div class="links">
+              <a href="https://github.com/dheirya909" target="_blank" rel="noopener" title="GitHub">@Github</a>
+              <a href="mailto:maildheiryakharbanda101@gmail.com" title="Email">📧</a>
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="https://avatars.githubusercontent.com/u/32423382?v=4" alt="You?" />
+            <div class="name">Shlok Singh</div>
+            <div class="role">Lead Dev</div>
+            <div class="links">
+              <a href="https://github.com/dheirya909/digiseum" target="_blank" rel="noopener">@Github</a>
+            </div>
+          </div>
+          <div class="team-card">
+            <img src="https://avatars.githubusercontent.com/u/32423382?v=4" alt="You?" />
+            <div class="name">Prakhar Dubey</div>
+            <div class="role">Contributer</div>
+            <div class="links">
+              <a href="https://github.com/dheirya909/digiseum" target="_blank" rel="noopener">@Github</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-section">
+        <h2>Want to Join or Support?</h2>
+        <p>
+          Digiseum is open-source and always evolving.<br>
+          Have ideas, feedback, or want to contribute? <a href="https://github.com/dheirya909/digiseum" target="_blank" rel="noopener">Let’s build the future of digital museums together!</a>
+        </p>
+      </section>
+      <div class="about-credit">
+        &copy; 2025 Digiseum.<br>
+        Images are property of their respective museums, used for educational and demo purposes.<br>
+        <a href="https://github.com/dheirya909/digiseum" target="_blank" rel="noopener" style="color:#25b36b;">View on GitHub</a>
+      </div>
+    </div>
+</body>
+</html>
